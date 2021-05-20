@@ -4,3 +4,10 @@ JOIN teachers ON teachers.id = teacher_id
 JOIN students ON students.id = student_id
 JOIN assignments ON assignments.id = assignment_id
 ORDER BY duration;
+
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  name VARCHAR(255),
+  birth_year DATE,
+  member_since TIMESTAMP
+);
